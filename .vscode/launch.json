@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Debug testcafe test",
+        "runtimeExecutable": "npm",
+        "cwd": "${workspaceRoot}",
+        "env":{
+           "NODE_PATH": "${workspaceRoot}/node_modules"
+        },
+        "runtimeArgs": [
+            "run", "cucumber-focus"
+        ],
+        "port": 1337
+      },
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Debug frontend",
+        "url": "http://localhost:4200",
+        "webRoot": "${workspaceFolder}"
+      }
+    ]
+  }

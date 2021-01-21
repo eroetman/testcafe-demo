@@ -1,0 +1,26 @@
+{
+    "screenshots": {
+        "path": "reports/screenshots",
+        "takeOnFails": true
+    },
+    "proxy": "browse.ontwikkel.local:8080",
+    "proxyBypass": [
+      "localhost:4200",
+      "*.ontwikkel.local",
+      "*.swh04.local",
+      "*.unix.int.politie"
+    ],
+    "reporter": [
+        {
+            "name": "spec"
+        },
+        {
+            "name": "html",
+            "output": "reports/report.html"
+        }
+    ],
+    "pageLoadTimeout": 2000,
+    "speed": 1.0,
+    "selectorTimeout": 2000,
+    "assertionTimeout": 2000
+}

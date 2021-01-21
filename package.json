@@ -1,0 +1,24 @@
+{
+  "name": "testcafe-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api-stub": "node api-stub/api-stub.js",
+    "tc": "testcafe chrome testcafe-demo*-test.ts",
+    "tc-api": "testcafe chrome:headless testcafe-api01-test.ts",
+    "cucumber": "node testcafe.conf.ts",
+    "cucumber-focus": "node --inspect=1337 testcafe.conf.ts --tags @focus, ~@skip",
+    "cucumber-live": "node testcafe.conf.ts --watch=true"
+  },
+  "devDependencies": {
+    "@types/supertest": "^2.0.10",
+    "api-stub": "0.0.2",
+    "cucumber": "^5.1.0",
+    "gherkin-testcafe": "^2.5.2",
+    "supertest": "^6.0.1",
+    "testcafe": "^1.10.1",
+    "testcafe-reporter-html": "^1.4.6",
+    "typescript": "^4.1.3"
+  }
+}
