@@ -9,7 +9,6 @@ Demo project voor testtool Testcafé, inclusief Cucumber voorbeeld.
 
 ### Runnen van standaard Testcafé tests
 `npx testcafe chrome testcafe-demo01-test.ts`  
-`npx testcafe chrome testcafe-demo02-intern-test.ts`  
 `npm run tc`
 
 ### Runnen van Cucumber tests
@@ -31,7 +30,3 @@ Als je een nieuwe, schone, installatie van Testcafé wilt doen, inclusief typesc
 `npm init`  
 `npm install testcafe typescript gherkin-testcafe cucumber@5.1.0 testcafe-reporter-html --save-dev`  
 `npx typescript`
-
-### Proxy instellingen
-Normaal gesproken zijn er geen proxy-instellingen nodig om tests te draaien op interne applicaties. 
-Omdat in deze demo politie.nl wordt benaderd is wel een proxy-instelling opgenomen in het bestand `.testcaferc.json`.

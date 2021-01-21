@@ -3,13 +3,6 @@
         "path": "reports/screenshots",
         "takeOnFails": true
     },
-    "proxy": "browse.ontwikkel.local:8080",
-    "proxyBypass": [
-      "localhost:4200",
-      "*.ontwikkel.local",
-      "*.swh04.local",
-      "*.unix.int.politie"
-    ],
     "reporter": [
         {
             "name": "spec"
